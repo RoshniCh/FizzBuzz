@@ -1,7 +1,7 @@
 function fizzbuzz()
 {
     var i = 0;
-    for (i=1; i<300; i++)
+    for (i=1; i<500; i++)
     {
         let output = [];
         let stringOutput = "";
@@ -17,7 +17,25 @@ function fizzbuzz()
         {
             output.push("Bang")
         }
-
+        if (i%11 == 0)
+        {
+            output[0] = "Bong"
+        }
+        if (i%13 == 0)
+        {
+            if (i%3 == 0)
+            {
+                output.splice(1,0,"Fezz");
+            }
+            else
+            {
+                output.splice(0,0,"Fezz")
+            }
+        }
+        if (i%17 == 0)
+        {
+            output.reverse();
+        }
         /*join array to string*/
         stringOutput = output.join('');
         /*check for number without word*/
