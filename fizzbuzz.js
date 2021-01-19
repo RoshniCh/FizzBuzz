@@ -19,10 +19,12 @@ function fizzbuzz()
         }
         if (i%11 == 0)
         {
-            output[0] = "Bong"
+            output = ["Bong"];
+        
         }
         if (i%13 == 0)
         {
+            /*
             if (i%3 == 0)
             {
                 output.splice(1,0,"Fezz");
@@ -31,6 +33,23 @@ function fizzbuzz()
             {
                 output.splice(0,0,"Fezz")
             }
+            */
+            let a = 0;
+            for (a=0; a<output.length; a++)
+            {
+                if (output[a].startsWith("B"))
+                break;
+            }
+            if (a==output.length)
+            {
+                output.splice(0,0,"Fezz");
+            }
+            else
+            {
+                output.splice(a,0,"Fezz")
+            }
+
+
         }
         if (i%17 == 0)
         {
