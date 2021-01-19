@@ -1,7 +1,7 @@
 function fizzbuzz()
 {
     var i = 0;
-    for (i=1; i<100; i++)
+    for (i=1; i<300; i++)
     {
         let output = [];
         let stringOutput = "";
@@ -12,6 +12,10 @@ function fizzbuzz()
         if (i%5 == 0)
         {
             output.push("Buzz")
+        }
+        if (i%7 == 0)
+        {
+            output.push("Bang")
         }
 
         /*join array to string*/
