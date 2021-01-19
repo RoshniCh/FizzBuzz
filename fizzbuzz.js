@@ -7,6 +7,14 @@ function fizzbuzz()
         {
             console.log('FizzBuzz'); 
         }
+        else if (i%3 == 0 && i%7 == 0)
+        {
+            console.log('FizzBang'); 
+        }
+        else if (i%5 == 0 && i%7 == 0)
+        {
+            console.log('BuzzBang'); 
+        }
         else if (i%3 == 0 )
         {
            console.log('Fizz');
@@ -14,6 +22,10 @@ function fizzbuzz()
         else if (i%5 == 0 )
         {
            console.log('Buzz');
+        }
+        else if (i%7 == 0 )
+        {
+           console.log('Bang');
         }
         else
         {
